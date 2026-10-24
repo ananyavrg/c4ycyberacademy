@@ -94,4 +94,5 @@ export const getLesson = (lessonId: string) => {
     const l = p.lessons.find((x) => x.id === lessonId);
     if (l) return { pathway: p, lesson: l };
   }
+  return undefined;
 };
